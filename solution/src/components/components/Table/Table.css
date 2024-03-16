@@ -1,0 +1,18 @@
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.data-table th,
+.data-table td {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+.data-table thead th {
+  background-color: #ababab;
+}
+.data-table tr:nth-child(even) {
+  background-color: #efefef;
+}
