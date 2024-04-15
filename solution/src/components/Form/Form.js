@@ -45,8 +45,6 @@ const Form = ({ locationOptions }) => {
       if (apiValidationError && name?.length) {
         setNameError("This name already exists in the table.");
         return;
-      } else {
-        setNameError(null); // Clear error if name is entered
       }
     }
   };
@@ -82,6 +80,7 @@ const Form = ({ locationOptions }) => {
           />
           {nameError && <p className="error-message">{nameError}</p>}
         </div>
+
         <div className="form-group">
           <label htmlFor="location" className="form-label">
             Location:
@@ -101,7 +100,8 @@ const Form = ({ locationOptions }) => {
               ))}
           </select>
         </div>
-        <sectino className="buttons">
+
+        <section className="buttons">
           <button type="submit" className="form-button">
             Add
           </button>
@@ -112,7 +112,7 @@ const Form = ({ locationOptions }) => {
           >
             Clear
           </button>
-        </sectino>
+        </section>
       </form>
 
       <Table tableData={tableData} />

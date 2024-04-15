@@ -101,7 +101,7 @@ const Form = ({ locationOptions }) => {
               ))}
           </select>
         </div>
-        <sectino className="buttons">
+        <section className="buttons">
           <button type="submit" className="form-button">
             Add
           </button>
@@ -112,7 +112,7 @@ const Form = ({ locationOptions }) => {
           >
             Clear
           </button>
-        </sectino>
+        </section>
       </form>
 
       <Table tableData={tableData} />

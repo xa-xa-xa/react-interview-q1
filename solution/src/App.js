@@ -4,11 +4,11 @@ import Form from "./components/Form/Form";
 import { getLocations } from "./mock-api/apis";
 
 const App = () => {
-  // IRL everything should be in sepate files and folders, but symplicity of assigment keep it here
+  // IRL everything should be in sepate files and folders, but for the symplicity of the assigment keep it here
   const [locationOptions, setLocationOptions] = useState([]);
-
+  //FIXME
   const fetchLocationOptions = async () => {
-    const options = await getLocations(); //FIXME
+    const options = await getLocations();
     if (options) {
       setLocationOptions(options);
     } else {
@@ -16,8 +16,7 @@ const App = () => {
     }
   };
 
-  // Since we dont have real api do it here otherwise better for to do "fetch" API or React Query etc
-
+  // Since we dont have real api do it here otherwise better to do "fetch" API or React Query etc
   useEffect(() => {
     fetchLocationOptions();
   }, []);
